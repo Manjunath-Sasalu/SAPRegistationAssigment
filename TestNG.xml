@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="sapRegistration" tests="parallel" thread-count="3">
+
+	<listeners>
+		<listener
+			class-name="com.sapregistration.utilities.ExtentReportManager" />
+	</listeners>
+
+	<test name="chromeTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.sapregistration.testCases.TC_Registration_0001" />
+			
+		</classes>
+	</test>
+	
+
+	
+
+
+</suite>
