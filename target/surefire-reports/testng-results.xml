@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="sapRegistration" duration-ms="29156" started-at="2020-07-23T16:50:41Z" finished-at="2020-07-23T16:51:10Z">
+  <suite name="sapRegistration" duration-ms="25713" started-at="2020-07-24T17:37:37Z" finished-at="2020-07-24T17:38:03Z">
     <groups>
     </groups>
-    <test name="chromeTest" duration-ms="29156" started-at="2020-07-23T16:50:41Z" finished-at="2020-07-23T16:51:10Z">
+    <test name="chromeTest" duration-ms="25713" started-at="2020-07-24T17:37:37Z" finished-at="2020-07-24T17:38:03Z">
       <class name="com.sapregistration.testCases.TC_Registration_0001">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@e056f20]" name="setup" is-config="true" duration-ms="6131" started-at="2020-07-23T16:50:41Z" finished-at="2020-07-23T16:50:47Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@19bb07ed]" name="setup" is-config="true" duration-ms="7149" started-at="2020-07-24T17:37:37Z" finished-at="2020-07-24T17:37:44Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyRegistration()[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@e056f20]" name="verifyRegistration" duration-ms="22128" started-at="2020-07-23T16:50:47Z" finished-at="2020-07-23T16:51:09Z">
+        <test-method status="PASS" signature="verifyRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@19bb07ed]" name="verifyRegistration" duration-ms="16339" started-at="2020-07-24T17:37:46Z" data-provider="RegisterData" finished-at="2020-07-24T17:38:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Auto]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Register]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Auto.Reg1rew@yopmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@e056f20]" name="tearDown" is-config="true" duration-ms="761" started-at="2020-07-23T16:51:09Z" finished-at="2020-07-23T16:51:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@19bb07ed]" name="tearDown" is-config="true" duration-ms="715" started-at="2020-07-24T17:38:02Z" finished-at="2020-07-24T17:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

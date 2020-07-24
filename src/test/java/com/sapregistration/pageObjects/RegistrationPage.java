@@ -73,16 +73,18 @@ public class RegistrationPage{
 	
 
 	public void clickOnSignUp() throws InterruptedException {
+		
+		Utilities.webDriverImplicitWait(ldriver, btnSignUp, "clickable", 10);
 		btnSignUp.click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		ldriver.switchTo().frame("IDS_UI_Window");
 		//Utilities.switchToFrame(ldriver, "IDS_UI_Window");
 		
 	}
 	
 	public void verifyRegistrationPage() throws InterruptedException {
-		Thread.sleep(2000);
-		
+		//Thread.sleep(2000);
+		Utilities.webDriverImplicitWait(ldriver, lblRegistration, "visibility", 10);
 		Assert.assertEquals("Registration",lblRegistration.getText());
 	}
 	
@@ -110,7 +112,8 @@ public class RegistrationPage{
 	
 	public void selectTermsAndPolicyCheckBox(WebDriver ldriver) throws InterruptedException {
 		Utilities.scrollToElement(ldriver, chkPalicyAgree);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
+		Utilities.webDriverImplicitWait(ldriver, chkPalicyAgree, "visibility", 10);
 		chkPalicyAgree.click();
 		chkTerms.click();
 		

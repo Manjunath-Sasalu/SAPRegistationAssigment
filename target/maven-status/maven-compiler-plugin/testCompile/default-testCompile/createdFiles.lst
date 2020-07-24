@@ -1,6 +1,6 @@
+com\sapregistration\utilities\XLUtils.class
 com\sapregistration\testBase\BaseClass.class
 com\sapregistration\utilities\Utilities.class
 com\sapregistration\utilities\ExtentReportManager.class
 com\sapregistration\pageObjects\RegistrationPage.class
 com\sapregistration\testCases\TC_Registration_0001.class
-com\sapregistration\testBase\RunBatFile.class
