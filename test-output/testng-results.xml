@@ -1,97 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="598" started-at="2020-07-24T16:56:17Z" finished-at="2020-07-24T16:56:17Z">
+  <suite name="sapRegistration" duration-ms="24699" started-at="2020-07-24T19:37:07Z" finished-at="2020-07-24T19:37:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="598" started-at="2020-07-24T16:56:17Z" finished-at="2020-07-24T16:56:17Z">
+    <test name="chromeTest" duration-ms="24699" started-at="2020-07-24T19:37:07Z" finished-at="2020-07-24T19:37:32Z">
       <class name="com.sapregistration.testCases.TC_Registration_0001">
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@5d7148e2]" name="setup" is-config="true" duration-ms="0" started-at="2020-07-24T16:56:17Z" finished-at="2020-07-24T16:56:17Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-1573335372\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-1573335372\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@302552ec]" name="setup" is-config="true" duration-ms="6072" started-at="2020-07-24T19:37:07Z" finished-at="2020-07-24T19:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="verifyRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@5d7148e2]" name="verifyRegistration" duration-ms="0" started-at="2020-07-24T16:56:17Z" data-provider="RegisterData" finished-at="2020-07-24T16:56:17Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-1573335372\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\Manjunath\AppData\Local\Temp\testng-eclipse-1573335372\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="verifyRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@302552ec]" name="verifyRegistration" duration-ms="16644" started-at="2020-07-24T19:37:15Z" data-provider="RegisterData" finished-at="2020-07-24T19:37:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Auto]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Register]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Auto.Reg1rew@yopmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegistration -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@5d7148e2]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-07-24T16:56:17Z" finished-at="2020-07-24T16:56:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sapregistration.testCases.TC_Registration_0001@302552ec]" name="tearDown" is-config="true" duration-ms="679" started-at="2020-07-24T19:37:31Z" finished-at="2020-07-24T19:37:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.sapregistration.testCases.TC_Registration_0001 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- sapRegistration -->
 </testng-results>

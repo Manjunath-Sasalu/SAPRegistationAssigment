@@ -66,25 +66,23 @@ public class RegistrationPage{
 	WebElement btnRegister;
 	
 	
-	
-    
+	@FindBy(xpath = "/html/body/main/div/div/div[2]")
+	@CacheLookup
+	WebElement confirmRigister;
 	//Action Methods
 	//driver.
 	
 
-	public void clickOnSignUp() throws InterruptedException {
+	public void clickOnSignUp() {
 		
-		Utilities.webDriverImplicitWait(ldriver, btnSignUp, "clickable", 10);
+		Utilities.webDriverExplicitWait(ldriver, btnSignUp, "clickable", 30);
 		btnSignUp.click();
-		//Thread.sleep(3000);
-		ldriver.switchTo().frame("IDS_UI_Window");
-		//Utilities.switchToFrame(ldriver, "IDS_UI_Window");
 		
+		ldriver.switchTo().frame("IDS_UI_Window");
 	}
 	
-	public void verifyRegistrationPage() throws InterruptedException {
-		//Thread.sleep(2000);
-		Utilities.webDriverImplicitWait(ldriver, lblRegistration, "visibility", 10);
+	public void verifyRegistrationPage()  {
+		Utilities.webDriverExplicitWait(ldriver, lblRegistration, "visibility", 10);
 		Assert.assertEquals("Registration",lblRegistration.getText());
 	}
 	
@@ -110,10 +108,10 @@ public class RegistrationPage{
 		txtConfirmPassword.sendKeys(newPassword);
 	}
 	
-	public void selectTermsAndPolicyCheckBox(WebDriver ldriver) throws InterruptedException {
-		Utilities.scrollToElement(ldriver, chkPalicyAgree);
-		//Thread.sleep(2000);
-		Utilities.webDriverImplicitWait(ldriver, chkPalicyAgree, "visibility", 10);
+	public void selectTermsAndPolicyCheckBox(WebDriver ldriver) {
+		
+		Utilities.scrollToTillWebElement(ldriver, chkPalicyAgree);
+		Utilities.webDriverExplicitWait(ldriver, chkPalicyAgree, "visibility", 10);
 		chkPalicyAgree.click();
 		chkTerms.click();
 		
@@ -125,9 +123,11 @@ public class RegistrationPage{
 	}
 	
 	public void verifyConfirmationMessage(String confirmMessage) {
-		String actulConfirm = ldriver.findElement(By.xpath("/html/body/main/div/div/div[2]")).getText().trim();
+		Utilities.webDriverExplicitWait(ldriver, confirmRigister, "visibility", 10);
+		String actulConfirm = confirmRigister.getText().trim();
         System.out.println("confMessage :  " + actulConfirm);
         Assert.assertEquals(actulConfirm.contains(confirmMessage),true);
+        ldriver.switchTo().defaultContent();
 	}
 	
 }

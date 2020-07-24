@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -49,26 +50,18 @@ public class BaseClass {
 
 		if(br.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.silentOutput","true"); 
+			//System.setProperty("webdriver.chrome.silentOutput","true"); 
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
-		else if(br.equals("firefox"))
+		else if(br.equals("chrome_headless"))
 		{
-			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
-		}
-		else if(br.equals("ie"))
-		{	
-			//WebDriverManager.iedriver().setup();//Not working
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\Drivers\\IEDriverServer.exe");
-			driver=new InternetExplorerDriver();
-		}
-		else if(br.equals("edge"))
-		{				
-			//WebDriverManager.edgedriver().setup(); //Not working
-			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"\\Drivers\\msedgedriver.exe");
-			driver = new EdgeDriver();
+			
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\Drivers\\chromedriver.exe");
+			//Headless Mode
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			 driver = new ChromeDriver(options);
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
