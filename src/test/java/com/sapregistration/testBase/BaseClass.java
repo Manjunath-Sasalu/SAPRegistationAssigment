@@ -50,7 +50,7 @@ public class BaseClass {
 
 		if(br.equals("chrome"))
 		{
-			//System.setProperty("webdriver.chrome.silentOutput","true"); 
+			System.setProperty("webdriver.chrome.silentOutput","true"); 
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
