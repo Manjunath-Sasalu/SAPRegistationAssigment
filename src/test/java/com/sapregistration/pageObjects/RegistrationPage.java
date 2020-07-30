@@ -69,6 +69,7 @@ public class RegistrationPage{
 	@FindBy(xpath = "/html/body/main/div/div/div[2]")
 	@CacheLookup
 	WebElement confirmRigister;
+	
 	//Action Methods
 	//driver.
 	
