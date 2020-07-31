@@ -1,4 +1,0 @@
-# Created at 2020-07-31T13:01:43.870
-Boot Manifest-JAR contains absolute paths in classpath 'E:\SAP_SighUp\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
