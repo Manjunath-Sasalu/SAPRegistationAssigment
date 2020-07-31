@@ -48,6 +48,7 @@ public class BaseClass {
 		configPropObj.load(configfile);
 		// end of loading gconfig.properties file
 
+		System.out.println("Browser: "+br);
 		if(br.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.silentOutput","true"); 
